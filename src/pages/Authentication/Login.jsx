@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import login from '../../assets/images/login.jpg'; // Assuming you have a login image in this path
+import bgImg from '../../assets/images/login.jpg'; // Assuming you have a login image in this path
+import logo from '../../assets/images/logo.png'; // Assuming you have a logo image in this path
 
 const Login = () => {
     return (
@@ -8,7 +9,7 @@ const Login = () => {
                 <div
                     className='hidden bg-cover bg-center lg:block lg:w-1/2'
                     style={{
-                        backgroundImage: `url('https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80')`,
+                        backgroundImage: `url(${bgImg})`
                     }}
                 ></div>
 
@@ -16,7 +17,7 @@ const Login = () => {
                     <div className='flex justify-center mx-auto'>
                         <img
                             className='w-auto h-7 sm:h-8'
-                            src= {login}
+                            src= {logo}
                             alt=''
                         />
                     </div>

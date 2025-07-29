@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-
+import bgRegiter from '../../assets/images/register.jpg'; // Assuming you have a register image in this path
+import logo from '../../assets/images/logo.png'; // Assuming you have a logo image in this path
 const Register = () => {
   return (
     <div className='flex justify-center items-center min-h-[calc(100vh-306px)]'>
@@ -8,7 +9,7 @@ const Register = () => {
           <div className='flex justify-center mx-auto'>
             <img
               className='w-auto h-7 sm:h-8'
-              src='https://merakiui.com/images/logo.svg'
+              src={logo}
               alt=''
             />
           </div>
@@ -144,7 +145,7 @@ const Register = () => {
         <div
           className='hidden bg-cover bg-center lg:block lg:w-1/2'
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80')`,
+            backgroundImage: `url(${bgRegiter})`
           }}
         ></div>
       </div>
