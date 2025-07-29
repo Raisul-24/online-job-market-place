@@ -7,17 +7,17 @@ const Navbar = () => {
   const { user } = useContext(AuthContext) // Replace with actual user state management
   console.log('User in Navbar:', user);
   return (
-    <div className="navbar shadow-sm">
+    <div className="navbar shadow-sm bg-base-100 px-4">
       <div className="flex-1">
-        <div className="flex gap-1 items-center">
+        <div className="flex gap-1 md:gap-2 items-center">
           <img className='w-auto h-7' src={logo} alt="" />
-          <a className="font-bold text-xl">Online Job Matket</a>
+          <a className="font-bold text-xs md:text-xl">Online Job Matket</a>
         </div>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
-          <ul className="menu menu-horizontal px-1">
-            <li><div className="">Home</div></li>
+          <ul className="menu menu-horizontal px-1 text-xs md:text-base">
+            <li><Link to='/'>Home</Link></li>
             {!user && (
               <li><Link to='/login'>Login</Link></li>
             )}
