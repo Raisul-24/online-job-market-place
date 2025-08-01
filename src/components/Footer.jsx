@@ -3,7 +3,7 @@ import logo from '../assets/images/logo.png'; // Assuming you have a logo image 
 
 const Footer = () => {
     return (
-        <footer className="relative w-full mb-20">
+        <footer className="relative w-full py-10 bg-gray-50">
             <div className="w-full px-8 mx-auto max-w-7xl">
                 <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
                     <div className="flex flex-col justify-center items-center">
