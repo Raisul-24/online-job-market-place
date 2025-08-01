@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.png'; // Assuming you have a logo image 
 const Footer = () => {
     return (
         <footer className="relative w-full py-10 bg-gray-50">
-            <div className="w-full px-8 mx-auto max-w-7xl">
+            <div className="w-full mx-auto max-w-7xl">
                 <div className="grid justify-between grid-cols-1 gap-4 md:grid-cols-2">
                     <div className="flex flex-col justify-center items-center">
                         <img className='w-auto h-20 md:h-28 rounded-xl' src={logo} alt="" />
@@ -90,7 +90,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t border-slate-200 md:flex-row md:justify-between">
+                <div className="flex flex-col items-center justify-center w-full py-4 mt-12 border-t-2 border-slate-400 md:flex-row md:justify-between">
                     <p className="block mb-4 text-sm text-center text-slate-500 md:mb-0">
                         Copyright © 2024
                         <a href="https://material-tailwind.com/">Online Job Market</a>. All

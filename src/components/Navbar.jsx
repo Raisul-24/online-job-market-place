@@ -7,7 +7,7 @@ const Navbar = () => {
   const { user } = useContext(AuthContext) // Replace with actual user state management
   console.log('User in Navbar:', user);
   return (
-   <div className=" shadow-sm bg-gray-50 px-4">
+   <div className=" shadow-xl bg-gray-50 px-4">
      <div className="navbar mx-auto max-w-7xl">
       <div className="flex-1">
         <div className="flex gap-1 md:gap-2 items-center">
